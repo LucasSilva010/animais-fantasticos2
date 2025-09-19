@@ -16,6 +16,4 @@ export default function initFuncionamento() {
     // verifica se estamos abertos
     funcionamento.classList.add("aberto");
   }
-
-  console.log(diaAgora); // imprime o dia da semana atual no console
 }
