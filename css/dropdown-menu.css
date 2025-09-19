@@ -1,0 +1,48 @@
+[data-dropdown] {
+  position: relative;
+}
+/* Toda li vem nativamente com display: flex que tinhamos colocado, ao usar o position relative no container, ele tirou o display flex das nossas li */
+
+[data-dropdown] .dropdown-menu {
+  display: none;
+}
+
+ [data-dropdown]:hover .dropdown-menu, 
+[data-dropdown].active .dropdown-menu {
+  display: block;
+  animation: showUp 0.3s forwards;
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: #e54;
+  top: 38px; /* este top está levando em consideração a distância com a Li que está ativando o menu-dropdown. Então está com um valor suficiente para qur não exista u um gap entre os dois, pois se existir, o menu irá sumir antes mesmo de o mouse chegar nele.*/
+  border: 2px solid #333;
+  z-index: 200;
+}
+
+.dropdown-menu::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #e54;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.dropdown-menu li a:hover {
+  color: white;
+}
