@@ -7,7 +7,7 @@ export default class SoftScroll {
       this.options = options;
     }
 
-    this.scrollToSection = this.scrollToSection.bind(this); // bind do this para referenciar a classe no callback
+    this.scrollToSection = this.scrollToSection.bind(this); // bind do this para referenciar a classe (SoftScroll) no callback
   }
 
   scrollToSection(event) {
