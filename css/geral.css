@@ -281,6 +281,10 @@ body {
   display: none;
 }
 
+.js [data-anime='accordion'] dt {
+  cursor: pointer;
+}
+
 [data-anime='accordion'] dt::after {
   content: '⬎';
   margin-left: 10px;
