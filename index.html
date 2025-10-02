@@ -17,7 +17,10 @@
   <body>
     <div class="grid-container">
       <nav class="menu" data-menu="suave">
-        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button> <!-- aria expanded = false indica para o leitor de tela que este botao nao esta expandido
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <!-- aria expanded = false indica para o leitor de tela que este botao nao esta expandido
         aria controls = menu indica qual area o botao controla -->
         <ul data-menu="list" id="menu">
           <li><a href="#animais">Animais</a></li>
@@ -68,6 +71,11 @@
             <p>
               Também apresentam como particularidade suas pupilas ovais,
               semelhantes às pupilas verticais dos felídeos.
+            </p>
+            <p>
+              As raposas são animais mamíferos e onívoros pertencentes à família
+              Canidae. São vulpídeos de porte médio, caracterizados por um
+              focinho comprido e uma cauda longa e peluda.
             </p>
           </section>
           <section data-anime="show-down">
@@ -216,14 +224,16 @@
 
       <section class="grid-section numeros" data-anime="scroll">
         <h1 class="titulo">Números</h1>
-        <div class="numeros-grid">
-          
-        </div>
+        <div class="numeros-grid"></div>
       </section>
 
       <section class="grid-section contato" data-anime="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
-        <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento"
+        >
           <img src="img/mapa.png" />
         </div>
         <ul class="dados">
@@ -232,7 +242,9 @@
           <li>Rua do Conde, nº 21</li>
           <li>Rio de Janeiro - RJ</li>
           <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar.</li>
-          <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex 8h às 18h</li>
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg à Sex 8h às 18h
+          </li>
         </ul>
       </section>
       <footer class="copy">
