@@ -19,7 +19,8 @@ accordion.init();
 const tabNav = new TabNav("[data-tab='menu'] li", "[data-tab='content'] section");
 tabNav.init();
 
-initModal();
+const modal = new initModal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
+modal.init();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
