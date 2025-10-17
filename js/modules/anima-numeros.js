@@ -51,6 +51,7 @@ export default class AnimaNumeros {
     if (this.numeros.length && this.observerTarget && this.observerClass) {
       this.addMutationObserver();
     }
+    return this;
   }
   // Primeiros passamos o elemento que queremos observar, no caso o elemento com a classe numeros. Depois passamos um objeto de configuração, onde podemos passar o que queremos observar. No caso, estamos observando os atributos do elemento. Assim que o elemento for alterado, a função handleMutation será chamada.
 }
